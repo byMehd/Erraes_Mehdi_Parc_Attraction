@@ -1,0 +1,15 @@
+Parc d’attraction
+Cahier des charges
+
+
+Gérer l’état des attractions (visible / pas visible) sur l’écran des visiteurs
+Pour l'instant, les visiteurs voient toutes les attractions. Ce qui n’est pas correct. Il faudrait que les visiteurs n’aient accès uniquement qu’aux attractions visible (même en accédant aux infos réseau).
+Mise en place des critiques pour les attractions
+Vous devez mettre en place un système de critique, qui comporte, un texte et une note, ainsi qu’un nom et un prénom qui peuvent être anonyme. Vous pouvez au choix, ajouter une pop up, qui s’ouvre au clic d’un bouton, ou une nouvelle page qui s’ouvre quand on clique sur un bouton, dans les deux cas avec un formulaire avec les champs ci-dessus.
+Amélioration de l’interface
+Vous devez faire en sorte que l’interface de l’application soit plus ergonomique. Vous pouvez faire un peu de scss pour rajouter des couleurs, faire une meilleure présentation, libre à vous d’imaginez ce que vous voulez
+Différente langue
+Vous devez mettre en place la langue anglaise sur l’application avec i18n uniquement (cf. https://angular.dev/guide/i18n).
+Documentation
+Vous devez faire une documentation technique (comment l’application fonctionne) et fonctionnelle (comment l’application s’utilise) de l’application ainsi que le schéma de base de données.
+Vous fournirez aussi un document expliquant les améliorations possibles de l’application, que ce soit technique ou fonctionnel. (Ainsi que le nombre de jour estimé).
