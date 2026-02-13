@@ -1,0 +1,35 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 0 24px;
+  min-height: 56px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  button {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (max-width: 600px) {
+  mat-toolbar {
+    padding: 0 16px;
+
+    a {
+      font-size: 16px;
+    }
+  }
+}

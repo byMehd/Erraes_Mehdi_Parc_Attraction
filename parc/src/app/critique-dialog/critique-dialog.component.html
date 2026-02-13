@@ -1,0 +1,39 @@
+<h2 mat-dialog-title i18n="@@reviewDialogTitle">Laisser un avis pour {{data.attractionNom}}</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="formulaireCritique">
+    <mat-form-field appearance="fill" class="form-field-full">
+      <mat-label i18n="@@yourReviewLabel">Votre avis</mat-label>
+      <textarea matInput formControlName="texte" rows="4"></textarea>
+    </mat-form-field>
+
+    <div class="note-section">
+      <label i18n="@@noteSliderLabel">Note: {{formulaireCritique.get('note')?.value}} / 5</label>
+      <mat-slider min="1" max="5" step="1">
+        <input matSliderThumb formControlName="note">
+      </mat-slider>
+    </div>
+
+    <mat-checkbox formControlName="anonyme">
+      <span i18n="@@publishAnonymouslyLabel">Publier de maniere anonyme</span>
+    </mat-checkbox>
+
+    <div class="name-fields" *ngIf="!formulaireCritique.get('anonyme')?.value">
+      <mat-form-field appearance="fill">
+        <mat-label i18n="@@firstNameLabel">Prenom</mat-label>
+        <input matInput formControlName="prenom">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label i18n="@@lastNameLabel">Nom</mat-label>
+        <input matInput formControlName="nom">
+      </mat-form-field>
+    </div>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()" i18n="@@cancelButton">Annuler</button>
+  <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="!formulaireCritique.valid"
+    i18n="@@publishButton">Publier</button>
+</mat-dialog-actions>

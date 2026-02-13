@@ -1,0 +1,43 @@
+<div class="page-header">
+  <h1 i18n="@@welcomeTitle">Bienvenue au Parc d'Attractions</h1>
+  <p i18n="@@welcomeSubtitle">Decouvrez nos attractions et partagez votre experience</p>
+</div>
+
+<div class="container">
+  <ng-container *ngFor="let attraction of attractions | async;">
+    <mat-card class="attraction-card">
+      <mat-card-header>
+        <mat-card-title>{{attraction.nom}}</mat-card-title>
+        <mat-card-subtitle *ngIf="getMoyenne(attraction.attraction_id!)">
+          <span class="rating" i18n="@@ratingLabel">Note: {{getMoyenne(attraction.attraction_id!)}} / 5</span>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p><strong i18n="@@descriptionLabel">Description:</strong> {{attraction.description}}</p>
+        <p><strong i18n="@@difficultyLabel">Niveau de difficulte:</strong> {{attraction.difficulte}} / 5</p>
+
+        <button mat-raised-button color="primary" (click)="openCritiqueDialog(attraction)">
+          <mat-icon>rate_review</mat-icon>
+          <span i18n="@@leaveReviewButton">Laisser un avis</span>
+        </button>
+
+        <div class="critiques-section" *ngIf="getCritiques(attraction.attraction_id!).length > 0">
+          <h3 i18n="@@visitorReviewsTitle">Avis des visiteurs</h3>
+          <div class="critique" *ngFor="let critique of getCritiques(attraction.attraction_id!)">
+            <div class="critique-header">
+              <span class="critique-author">
+                <strong *ngIf="critique.prenom || critique.nom">
+                  {{critique.prenom}} {{critique.nom}}
+                </strong>
+                <strong *ngIf="!critique.prenom && !critique.nom" i18n="@@anonymousLabel">Anonyme</strong>
+              </span>
+              <span class="critique-note">{{critique.note}}/5</span>
+            </div>
+            <p class="critique-texte">{{critique.texte}}</p>
+            <span class="critique-date">{{critique.date_creation | date:'short'}}</span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+</div>
