@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <span i18n="@@adminPageTitle">Page administrateur</span>
+      <button mat-raised-button color="accent" (click)="addAttraction()">
+        <span i18n="@@addAttractionButton">Ajouter une attraction</span>
+      </button>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <ng-container *ngIf="attractions | async">
+      <ng-container *ngFor="let formulaireAttraction of formulaireAttractions; let indexForm = index;">
+        <div class="attraction-form" [formGroup]="formulaireAttraction">
+          <div class="form-row">
+            <mat-form-field class="champ" appearance="fill">
+              <mat-label i18n="@@attractionNameLabel">Nom</mat-label>
+              <input matInput formControlName="nom">
+            </mat-form-field>
+
+            <mat-form-field class="champ" appearance="fill">
+              <mat-label i18n="@@attractionDescriptionLabel">Description</mat-label>
+              <input matInput formControlName="description">
+            </mat-form-field>
+
+            <mat-form-field class="champ" appearance="fill">
+              <mat-label i18n="@@difficultySlashFiveLabel">Difficulte / 5</mat-label>
+              <input matInput formControlName="difficulte" type="number" min="1" max="5">
+            </mat-form-field>
+
+            <mat-slide-toggle class="champ" formControlName="visible"><span i18n="@@visibleToVisitorsLabel">Visible pour
+                les visiteurs</span></mat-slide-toggle>
+
+            <button mat-raised-button color="primary" (click)="onSubmit(formulaireAttraction)">
+              <span i18n="@@saveButton">Enregistrer</span>
+            </button>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="welcomeTitle" datatype="html">
+        <source>Bienvenue au Parc d'Attractions</source>
+        <target>Welcome to the Amusement Park</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcomeSubtitle" datatype="html">
+        <source>Decouvrez nos attractions et partagez votre experience</source>
+        <target>Discover our attractions and share your experience</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ratingLabel" datatype="html">
+        <source>Note: <x id="INTERPOLATION" equiv-text="{{getMoyenne(attraction.attraction_id!)}}"/> / 5</source>
+        <target>Rating: <x id="INTERPOLATION" equiv-text="{{getMoyenne(attraction.attraction_id!)}}"/> / 5</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="descriptionLabel" datatype="html">
+        <source>Description:</source>
+        <target>Description:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="difficultyLabel" datatype="html">
+        <source>Niveau de difficulte:</source>
+        <target>Difficulty Level:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="leaveReviewButton" datatype="html">
+        <source>Laisser un avis</source>
+        <target>Leave a Review</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="visitorReviewsTitle" datatype="html">
+        <source>Avis des visiteurs</source>
+        <target>Visitor Reviews</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="anonymousLabel" datatype="html">
+        <source>Anonyme</source>
+        <target>Anonymous</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adminPageTitle" datatype="html">
+        <source>Page administrateur</source>
+        <target>Administrator Page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="addAttractionButton" datatype="html">
+        <source>Ajouter une attraction</source>
+        <target>Add an Attraction</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="attractionNameLabel" datatype="html">
+        <source>Nom</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="attractionDescriptionLabel" datatype="html">
+        <source>Description</source>
+        <target>Description</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="difficultySlashFiveLabel" datatype="html">
+        <source>Difficulte / 5</source>
+        <target>Difficulty / 5</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="visibleToVisitorsLabel" datatype="html">
+        <source>Visible pour les visiteurs</source>
+        <target>Visible to Visitors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="saveButton" datatype="html">
+        <source>Enregistrer</source>
+        <target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reviewDialogTitle" datatype="html">
+        <source>Laisser un avis pour <x id="INTERPOLATION" equiv-text="{{data.attractionNom}}"/></source>
+        <target>Leave a Review for <x id="INTERPOLATION" equiv-text="{{data.attractionNom}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">1,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="yourReviewLabel" datatype="html">
+        <source>Votre avis</source>
+        <target>Your Review</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noteSliderLabel" datatype="html">
+        <source>Note: <x id="INTERPOLATION" equiv-text="{{formulaireCritique.get('note')?.value}}"/> / 5</source>
+        <target>Rating: <x id="INTERPOLATION" equiv-text="{{formulaireCritique.get('note')?.value}}"/> / 5</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="publishAnonymouslyLabel" datatype="html">
+        <source>Publier de maniere anonyme</source>
+        <target>Post Anonymously</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">18,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="firstNameLabel" datatype="html">
+        <source>Prenom</source>
+        <target>First Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lastNameLabel" datatype="html">
+        <source>Nom</source>
+        <target>Last Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancelButton" datatype="html">
+        <source>Annuler</source>
+        <target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="publishButton" datatype="html">
+        <source>Publier</source>
+        <target>Publish</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adminLoginTitle" datatype="html">
+        <source>Connexion à la page administrateur</source>
+        <target>Login to Administrator Page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nameFieldLabel" datatype="html">
+        <source>Nom</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordLabel" datatype="html">
+        <source>Mot de passe</source>
+        <target>Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginButton" datatype="html">
+        <source>Connexion</source>
+        <target>Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
