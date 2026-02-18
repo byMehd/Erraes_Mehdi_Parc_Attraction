@@ -218,6 +218,22 @@
           <context context-type="linenumber">16,18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="appTitle" datatype="html">
+        <source>Parc d'attraction</source>
+        <target>Amusement Park</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logoutButton" datatype="html">
+        <source>Déconnexion</source>
+        <target>Logout</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

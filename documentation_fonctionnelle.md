@@ -16,8 +16,8 @@ URL : `http://localhost:4200/login`
 
 Identifiants par defaut :
 
-- Nom : admin
-- Mot de passe : admin
+- Nom : toto
+- Mot de passe : toto
 
 ## Fonctionnalites pour les visiteurs
 

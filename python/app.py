@@ -30,6 +30,10 @@ def addAttraction():
 
 @app.get('/attraction')
 def getAllAttraction():
+    checkToken = user.check_token(request)
+    if (checkToken != True):
+        return checkToken
+
     result = attraction.get_all_attraction()
     return result, 200
 

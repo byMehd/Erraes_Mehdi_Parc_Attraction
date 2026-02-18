@@ -144,7 +144,7 @@ Le backend utilise JWT (JSON Web Token) :
 
 1. Le login renvoie un token encode
 2. Le token contient l'ID utilisateur et expire apres un certain temps
-3. L'intercepteur Angular ajoute le header `Authorization: Bearer <token>`
+3. L'intercepteur Angular ajoute le header `Authorization: Token <token>`
 4. Le backend decode et verifie le token pour chaque requete protegee
 
 ## Base de donnees
