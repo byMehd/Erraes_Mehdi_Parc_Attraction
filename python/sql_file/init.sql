@@ -1,4 +1,6 @@
+DROP TABLE IF EXISTS critique;
 DROP TABLE IF EXISTS attraction;
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE attraction (
     attraction_id int auto_increment,
@@ -9,16 +11,12 @@ CREATE TABLE attraction (
     visible bool default true
 );
 
-DROP TABLE IF EXISTS users;
-
 CREATE TABLE users (
     users_id int auto_increment,
     primary key(users_id),
     name varchar(255) not null,
     password varchar(255) not null
 );
-
-DROP TABLE IF EXISTS critique;
 
 CREATE TABLE critique (
     critique_id int auto_increment,
